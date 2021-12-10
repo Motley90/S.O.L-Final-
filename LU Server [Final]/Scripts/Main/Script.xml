@@ -1,0 +1,5 @@
+<!-- Add the scripts and files to be loaded with scripts here -->
+
+<script file="main.nut" client="0" />
+<script file="PickupHandler.nut" client="0" />
+<script file="Client-GUI.nut" client="1" />
