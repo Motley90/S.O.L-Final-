@@ -656,31 +656,17 @@ LoadedFuncs.rawset("Level_2", function(Player) {
  			return true;
 		}
 		if (Slot == 57) { 
-				 GetInPickup[Player.ID] = false;
-				::FindPickup( TempPickup[Player.ID]).Remove();
-				::SmallMessage(Player,"~g~Mission Over", 2000, 1)
+			GetInPickup[Player.ID] = false;
+			::FindPickup( TempPickup[Player.ID]).Remove();
+			::SmallMessage(Player,"~g~Mission Over", 2000, 1)
+			Jobbing[Player.ID] = false;
 
 			Slot++;
  			return true;
 		}
-		Slot[Player.ID] = 0;
-		GetInCar[Player.ID] = false
-		GetInPickup[Player.ID] = false 
-		GetInSphere[Player.ID] = false 
-	if (FindVehicle(TempVehicle[Player.ID]) != -1 ) { 
- if (Player.Vehicle = FindVehicle(TempVehicle[Player.ID])) Player.RemoveFromVehicle() 
- FindVehicle(TempVehicle[Player.ID]).Remove() 
-}
-if (FindPickup(TempPickup[Player.ID]) != -1 ) { 
- FindPickup(TempPickup[Player.ID]).Remove() 
-}
-if (FindSphere(TempSphere[Player.ID], Player) != -1 ) { 
- FindSphere(TempSphere[Player.ID], Player).Remove() 
-}
-TempPickup[Player.ID] = -1; 
- TempSphere[Player.ID] = -1; 
- TempVehicle[Player.ID] = -1; 
+
 	})
-});function CreatePlayerSphere(Player) {
+});
+function CreatePlayerSphere(Player) {
  local sphere =   CreateClientSphere(Vector(0, 0, 0), 5.00, Colour( 0, 0, 255 ), Player )		
 TempSphere[Player.ID] = sphere.ID}
