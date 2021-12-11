@@ -86,25 +86,30 @@ function MissionHandler() {
 		Jobbing[Player.ID] = true;
 
 		Slot[Player.ID] = 0;
-		GetInCar[Player.ID] = false
-		GetInPickup[Player.ID] = false 
-		GetInSphere[Player.ID] = false 
+		GetInCar[Player.ID] = false;
+		GetInPickup[Player.ID] = false; 
+		GetInSphere[Player.ID] = false;
+		
 		if (FindVehicle(TempVehicle[Player.ID]) != -1 ) { 
 			if (Player.Vehicle) Player.RemoveFromVehicle();
 			FindVehicle(TempVehicle[Player.ID]).Remove() 
 			TempVehicle[Player.ID] = -1
 		}
+
 		if (FindPickup(TempPickup[Player.ID]) != -1 ) { 
 			FindPickup(TempPickup[Player.ID]).Remove() 
 			TempPickup[Player.ID] = -1
 		}
+
 		if (FindSphere(TempSphere[Player.ID], Player) != -1 ) { 
 			FindSphere(TempSphere[Player.ID], Player).Remove() 
 			TempSphere[Player.ID] = -1;
 		}
+
 		TempPickup[Player.ID] = -1; 
 		TempSphere[Player.ID] = -1; 
 		TempVehicle[Player.ID] = -1;
+
 		// Call a new mission here
 		local level = ReadIniInteger( "Levels/Levels.ini", Player.Name.tolower(), "Level" );
 		WriteIniInteger( "Levels/Levels.ini", Player.Name.tolower(), "Level", level + 1 );
@@ -130,8 +135,9 @@ function onPlayerSpawn(Player, iclass) {
 
   print(Slot[Player.ID])
   
-
 }
+
+// For testing
 function onPlayerCommand( pPlayer, szCommand, szText )
 {
 	if ( szCommand == "anim" )
