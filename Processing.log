@@ -1,0 +1,17 @@
+Going to work in a gui to fill the screen as a fade screen method.
+I guess create a sepereate file for it in the windows folder.
+GUI screen size is screen width and height of the players game res.
+
+Add to window library branch "FadeScreen-Server.nut, FadeScreen-Client.nut".
+Add to server mission timer the ability to change the alpha value.
+Add to the script generator a fade screen bool variable for the server timer to start handling when trigered. 
+I think all generated scripts should have the bool set to unfade when it is loaded for the player.
+
+I think the client should really have a variable call to the server that the window alpha was fully set.
+The next cript being automatically loaded should be yeilded. 
+
+I don't have intentions of forcing missions to auto load in the future. This is added as a test to the system and functions to use for later on.
+Even on a random load I would just fade the screen, handle setting data like the players skin, spawning things etc before unfading so the player does not see these things.
+
+---
+Delete from this log and developers log once done. 
