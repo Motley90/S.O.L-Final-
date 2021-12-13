@@ -26,7 +26,11 @@ Review everything in game
 Bots might be coming. Review the actor options, review 2016 source "early production for animations script". It had some fancy features.
 But needs to be reworked. 
 
-Review the source in game. Should have a solid source as a base of operations
+Review the source in game. Should have a solid source as a base of operations. 
+If bots happen I want to be able to generate scripts that can handle the bots around the server doing random things. 
+As lets not manually write that. 
+Bots could literally do a mission as if it looks like a player is doing it. I just need to make them travel to spheres.
+Constantly adding checks and what not
 
 ------------
 
@@ -41,3 +45,8 @@ Also fix indenting xD.
 Create basic gamemodes with every feature as a test and see if evenrything works before assuming.
 --------------
 Generate some random shit
+
+I don't mind editing generated scripts. 
+
+Try to configure a way to load specific scripts in game if a player enters a sphere. Maybe show a gui and if anything is clicked load that script for the player
+Good for peramedic, police, whatever. 
