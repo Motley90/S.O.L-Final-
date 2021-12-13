@@ -17,7 +17,7 @@ At this point clean up the scripts. Rename some stuff and test the system again.
 
 Add camera functions. Add to the timer the ability to move the camera around. Review camera controls in Controls.nut.
 We will not check if camera position made it from one, then two, etc. We will get how many incriments it takes to get to that point.
-The timer can handle that and will be clean versus the script trying to fix itself. Server side but ideally conterted to client side at a later date
+The timer can handle that and will be clean versus the script trying to fix itself by trying to go to exact vectors. Server side but ideally conterted to client side at a later date
 
 Review everything in game 
 
