@@ -1,3 +1,12 @@
+__________________________________________________________
+| Do not let random players create scripts.               | 
+| I know how it works and has to be called specific ways. |
+| The shit is really weird and I am still figuring it out |
+|                                                         |   
+|                                                         |
+|_________________________________________________________|
+
+
 Manaually create a max variable for generated scripts. So far there is only two. We reset the player back to the first for now.
 
 Delete the player from the table function in the generated script. 
@@ -17,7 +26,7 @@ At this point clean up the scripts. Rename some stuff and test the system again.
 
 Add camera functions. Add to the timer the ability to move the camera around. Review camera controls in Controls.nut.
 We will not check if camera position made it from one, then two, etc. We will get how many incriments it takes to get to that point.
-The timer can handle that and will be clean versus the script trying to fix itself by trying to go to exact vectors. Server side but ideally conterted to client side at a later date
+The timer can handle that and will be clean versus the script trying to fix itself by trying to go to exact vectors. Server side but ideally converted to client side at a later date
 
 Review everything in game 
 
@@ -50,3 +59,5 @@ I don't mind editing generated scripts.
 
 Try to configure a way to load specific scripts in game if a player enters a sphere. Maybe show a gui and if anything is clicked load that script for the player
 Good for peramedic, police, whatever. 
+
+At a later date a proper screen vector incriment will be added to be able to constantly add without manually adding stuff after.
