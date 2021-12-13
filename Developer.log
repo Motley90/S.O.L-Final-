@@ -1,0 +1,43 @@
+Manaually create a max variable for generated scripts. So far there is only two. We reset it for now.
+
+Delete the player from the table function in the generated script. 
+
+Add a library to enable and disable the script generation as well on player join and leaving the script is started and wrote when the player leaves. 
+This was done intentionally to prevent adding a system and needs to be implimented. 
+Eventually set the gamemode editor and script generator to be able to disconnect from the source by calling dofile at any time. 
+And reloadscripts when all players leave the server. Should be a simple add. I should call this anyway when no player are online. 
+
+Get into fade screen on data handeling between scripts. The standard library for fadescreen is broken when a player reconnects. 
+Test if the audio still goes to zero after a reconnect. If so we will use gui but still call the function for that very reason. 
+
+
+-----------
+At this point clean up the scripts. Rename some stuff and test the system again. If nothing got broken we can move past this point. 
+-----------
+
+Add camera functions. Add to the timer the ability to move the camera around. Review camera controls in Controls.nut.
+We will not check if camera position made it from one, then two, etc. We will get how many incriments it takes to get to that point.
+The timer can handle that and will be clean versus the script trying to fix itself. Server side but ideally conterted to client side at a later date
+
+Review everything in game 
+
+------------
+
+Bots might be coming. Review the actor options, review 2016 source "early production for animations script". It had some fancy features.
+But needs to be reworked. 
+
+Review the source in game. Should have a solid source as a base of operations
+
+------------
+
+Constantly review the source. Check out data handeling. Anything that can be optimized. The editor has some known bugs. But other than that this is the max push.
+
+The code generator needs some cleaning up. I removed functions at the end of the generated scripts manually. Just review the script parser lol.
+
+Also fix indenting xD.
+
+--------------
+
+Create basic gamemodes with every feature as a test and see if evenrything works before assuming.
+--------------
+Generate some random shit
