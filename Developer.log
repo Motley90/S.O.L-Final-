@@ -1,4 +1,4 @@
-Manaually create a max variable for generated scripts. So far there is only two. We reset it for now.
+Manaually create a max variable for generated scripts. So far there is only two. We reset the player back to the first for now.
 
 Delete the player from the table function in the generated script. 
 
